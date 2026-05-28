@@ -48,14 +48,7 @@ Tất cả các custom objects thường bắt đầu bằng `Z` cộng với Pr
 * `ZFPT_EH`: Enhancement (Package con theo module VD: `ZEH_FI`, `ZEH_SD`).
 * `ZFPT_REPORT`: Reports and Function (Package con theo module VD: `ZREPORT_FI`, `ZREPORT_SD`, `ZREPORT_HR`...).
 
-### Quy tắc 6: GitHub Repository & Branch
-* **Tên Repository:** Format `bwm.{LoB}.{tcode}` (VD: `bmw.core.zvariant`, `bmw.sd.zd01`).
-* **Tên Branch:**
-    * `Main`: Original Source code.
-    * `Update_v1`: Update/fix lần 1.
-    * `Update_v2`: Update/fix lần 2.
-
-## Ví dụ (Examples)
+### Ví dụ (Examples)
 - **User:** "Tôi muốn tạo một bảng chứa dữ liệu Hóa Đơn và một RAP model cho nó để làm Fiori app".
 - **AI Response:** Dựa theo chuẩn dự án FPT, bạn cần tạo các object sau:
   1. Package: `ZFPT_REPORT` (hoặc `ZREPORT_FI` tùy ngữ cảnh).
