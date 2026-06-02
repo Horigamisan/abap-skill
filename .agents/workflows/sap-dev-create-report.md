@@ -48,9 +48,11 @@ All project tracking/walkthrough artifacts (such as implementation plans, task c
 
 Step 1: Query Data (CDS Data Models)
 
-Required Skill: [Skill: CDS View Entities]
+Required Skill: [Skill: CDS View Entities] & [Skill: Find Released CDS View]
 
-Action: Create the underlying Interface View (DEFINE ROOT VIEW ENTITY). Apply built-in functions, associations, and @AccessControl.authorizationCheck: #CHECK. Create Auxiliary Views if complex joins are needed.
+Action:
+1.0 RELEASED SOURCE VALIDATION: Before creating any CDS view, use [Skill: Find Released CDS View] to verify that all base data sources referenced in the Technical Specification are released clean-core CDS views (Clean Core Level A). If any unreleased table or internal view is found, search for and replace with the best released alternative matching the required grain and field coverage.
+1.1 Create the underlying Interface View (DEFINE ROOT VIEW ENTITY). Apply built-in functions, associations, and @AccessControl.authorizationCheck: #CHECK. Create Auxiliary Views if complex joins are needed. Use ONLY verified released CDS views as data sources.
 
 Execute: Lint -> Push -> Activate.
 
